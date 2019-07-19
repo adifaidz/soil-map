@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Map</title>
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="index.css">
+    </head>
+<body>
+<div id="map"></div>
+<script src="https://ft2json.appspot.com/api/ft2json.js" type="text/javascript"></script>
+<script type="text/javascript">
+ft2json.query(
+    "SELECT name_0, name_1, kml_4326 FROM 420419 WHERE name_0 = 'Malaysia'", /* Fusion Tables query. */
+    function(result) {
+        /* Callback function. */
+        console.log(result);
+    },
+    {
+        /* Optional parameters. */
+        start : 25,
+        limit : 50
+    }
+);
+</script>
+<script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQjf0s6tUxLLRHyJNf5C1mismvAa8YKbI&callback=initMap"
+async defer></script>
+<script src="index.js"></script>
+</body>
+</html>
