@@ -1,0 +1,8 @@
+[
+    {"name" : "Unknown/Non-conductive", "value": "1"},
+    {"name" : "Bricks and mortar/Masonry", "value": "1"},
+    {"name" : "Reinforced Concrete", "value": "0.2"},
+    {"name" : "Metal Column/Beam", "value": "0.02"},
+    {"name" : "Reinforced Concrete Panel", "value": "0.01"},
+    {"name" : "Metal Cladding", "value": "0.01"}
+]

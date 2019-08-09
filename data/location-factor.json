@@ -1,0 +1,6 @@
+[
+    {"name" : "Surrounded by higher objects", "value": "0.25"},
+    {"name" : "Surrounded by objects of same or smaller height", "value": "0.5"},
+    {"name" : "Isolated", "value": "1"},
+    {"name" : "Isolated on a hill or knoll", "value": "2"}
+]

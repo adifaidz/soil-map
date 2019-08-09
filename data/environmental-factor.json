@@ -1,0 +1,6 @@
+[
+    {"name" : "Urban ( buildings > 20m )", "value": "0"},
+    {"name" : "Urban ( buildings between 10m and 20m )", "value": "0.1"},
+    {"name" : "Suburban ( buildings < 10m )", "value": "0.5"},
+    {"name" : "Rural", "value": "1"}
+]

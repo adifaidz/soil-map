@@ -1,0 +1,8 @@
+[
+    {"name" : "Unshielded - no routing precaution", "value": 1},
+    {"name" : "Unshielded - routing to avoid large loops", "value": 0.2},
+    {"name" : "Unshielded - routing to avoid loops", "value": 0.02},
+    {"name" : "Shielded - 5 < RS <= 20 Ω/km", "value": 0.001},
+    {"name" : "Shielded - 1 < RS <= 5 Ω/km", "value": 0.0002},
+    {"name" : "Shielded - RS <= 1 Ω/km", "value": 0.0001}
+]
