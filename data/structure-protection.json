@@ -1,7 +1,0 @@
-[
-    {"name" : "No Protection", "value": "1"},
-    {"name" : "LPS Protection - Class IV", "value": "0.2"},
-    {"name" : "LPS Protection - Class III", "value": "0.1"},
-    {"name" : "LPS Protection - Class II", "value": "0.05"},
-    {"name" : "LPS Protection - Class I", "value": "0.02"}
-]

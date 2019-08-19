@@ -1,7 +1,0 @@
-[
-    {"name" : "None", "value": "1"},
-    {"name" : "Insulated Exposed Down Conductor", "value": "0.01"},
-    {"name" : "Effective Soil Equiptential", "value": "0.01"},
-    {"name" : "Warning Notices", "value": "0.01"},
-    {"name" : "Fence", "value": "0"}
-]

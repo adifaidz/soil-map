@@ -1,0 +1,19 @@
+[
+    {"name": "Alor Setar", "region_id": "1", "cord": {"lat": 6.177690, "lng": 100.367920}},
+    {"name": "Langkawi", "region_id": "1", "cord": {"lat": 6.334720, "lng": 99.797493}},
+    {"name": "Butterworth", "region_id": "1", "cord": {"lat": 5.414850, "lng": 100.381140}},
+    {"name": "Bayan Lepas", "region_id": "1", "cord": {"lat": 5.291880, "lng": 100.264450}},
+    {"name": "Ipon", "region_id": "1", "cord": {"lat": 4.598820, "lng": 101.077110}},
+    {"name": "Sitiawan", "region_id": "1", "cord": {"lat": 4.215460, "lng": 100.695587}},
+    {"name": "Kota Bharu", "region_id": "2", "cord": {"lat": 6.117520, "lng": 102.241930}},
+    {"name": "Kuala Krai", "region_id": "2", "cord": {"lat": 5.531380, "lng": 102.197968}},
+    {"name": "Kuala Terengganu", "region_id": "2", "cord": {"lat": 5.319650, "lng": 103.132103}},
+    {"name": "Kuantan", "region_id": "2", "cord": {"lat": 3.763386, "lng": 103.220184}},
+    {"name": "Temerloh", "region_id": "2", "cord": {"lat": 3.448649, "lng": 102.416351}},
+    {"name": "Subang", "region_id": "3", "cord": {"lat": 3.012860, "lng": 101.570180}},
+    {"name": "KLIA Sepang", "region_id": "3", "cord": {"lat": 2.818450, "lng": 101.684330}},
+    {"name": "Malacca", "region_id": "4", "cord": {"lat": 2.201960, "lng": 102.248530}},
+    {"name": "Kluang", "region_id": "4", "cord": {"lat": 2.051540, "lng": 103.371960}},
+    {"name": "Senai", "region_id": "4", "cord": {"lat": 1.623780, "lng": 103.630160}},
+    {"name": "Mersing", "region_id": "4", "cord": {"lat": 2.428820, "lng": 103.845490}}
+]

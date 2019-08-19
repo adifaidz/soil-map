@@ -1,7 +1,0 @@
-[
-    {"name" : "No Protection", "value": "1"},
-    {"name" : "LPL III or IV", "value": "0.3"},
-    {"name" : "LPL II", "value": "0.2"},
-    {"name" : "LPL I", "value": "0.01"},
-    {"name" : "Better than LPL I", "value": "0.001"}
-]
