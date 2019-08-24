@@ -88,14 +88,14 @@ document.addEventListener('DOMContentLoaded', function () {
             <div class="body">
                 <ul class="info-list">
                     <li> Lightning Ground Flash Density : ${location.lightning_ground_flash_density}</li>
-                    <li> Soil Resistivity Ω : ${location.soil_resistivity}</li>
+                    <li> Soil Resistivity ( Ω meter ) : ${location.soil_resistivity}</li>
                     <li> R1 (Loss of Human Life) : 
                         <span class="${r1_before_class}">
                             ${structure.r1_before}
                         </span>
                     </li>
                     <li> Lightning Protection System (LPS) : ${lps} <br> </li>
-                    <li> Surge Protection System (SPS) : 
+                    <li> Surge Protection System (SPD) : 
                     <ul>                
                         <li> Power : ${sps1}</li>
                         <li> Telecom : ${sps2}</li>
