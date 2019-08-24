@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <li> Telecom : ${sps2}</li>
                     </ul>
                     </li>
-                    <li> R1 (After Protection) : 
+                    <li> R1 (Loss of Human Life) After Protection : 
                         <span class="${r1_after_class}">
                             ${structure.r1_after}
                         </span>
