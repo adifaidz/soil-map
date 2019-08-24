@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
         marker = new google.maps.Marker({
             position: location.cord,
             title: "Test",
-            icon: { url : 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'}
+            icon: { url : 'https://maps.google.com/mapfiles/ms/icons/green-dot.png'}
         })
         var contentString = `<div id="content" class="location-info">
             <h3 class="title">${location.name}</h3>
