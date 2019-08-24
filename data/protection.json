@@ -1,0 +1,44 @@
+{
+    "lightning": [{
+            "id": 1,
+            "name": "No Protection"
+        },
+        {
+            "id": 2,
+            "name": "LPS Class IV"
+        },
+        {
+            "id": 3,
+            "name": "LPS Class III"
+        },
+        {
+            "id": 4,
+            "name": "LPS Class II"
+        },
+        {
+            "id": 5,
+            "name": "LPS Class I"
+        }
+    ],
+    "surge": [{
+            "id": 1,
+            "name": "No Protection"
+        },
+        {
+            "id": 2,
+            "name": "LPL III or IV"
+        },
+        {
+            "id": 3,
+            "name": "LPL II"
+        },
+        {
+            "id": 4,
+            "name": "LPL I"
+        },
+        {
+            "id": 5,
+            "name": "Better than LPL I"
+        }
+    ]
+}

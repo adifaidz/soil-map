@@ -1,19 +1,1071 @@
 [
-    {"name": "Alor Setar", "region_id": "1", "cord": {"lat": 6.177690, "lng": 100.367920}},
-    {"name": "Langkawi", "region_id": "1", "cord": {"lat": 6.334720, "lng": 99.797493}},
-    {"name": "Butterworth", "region_id": "1", "cord": {"lat": 5.414850, "lng": 100.381140}},
-    {"name": "Bayan Lepas", "region_id": "1", "cord": {"lat": 5.291880, "lng": 100.264450}},
-    {"name": "Ipon", "region_id": "1", "cord": {"lat": 4.598820, "lng": 101.077110}},
-    {"name": "Sitiawan", "region_id": "1", "cord": {"lat": 4.215460, "lng": 100.695587}},
-    {"name": "Kota Bharu", "region_id": "2", "cord": {"lat": 6.117520, "lng": 102.241930}},
-    {"name": "Kuala Krai", "region_id": "2", "cord": {"lat": 5.531380, "lng": 102.197968}},
-    {"name": "Kuala Terengganu", "region_id": "2", "cord": {"lat": 5.319650, "lng": 103.132103}},
-    {"name": "Kuantan", "region_id": "2", "cord": {"lat": 3.763386, "lng": 103.220184}},
-    {"name": "Temerloh", "region_id": "2", "cord": {"lat": 3.448649, "lng": 102.416351}},
-    {"name": "Subang", "region_id": "3", "cord": {"lat": 3.012860, "lng": 101.570180}},
-    {"name": "KLIA Sepang", "region_id": "3", "cord": {"lat": 2.818450, "lng": 101.684330}},
-    {"name": "Malacca", "region_id": "4", "cord": {"lat": 2.201960, "lng": 102.248530}},
-    {"name": "Kluang", "region_id": "4", "cord": {"lat": 2.051540, "lng": 103.371960}},
-    {"name": "Senai", "region_id": "4", "cord": {"lat": 1.623780, "lng": 103.630160}},
-    {"name": "Mersing", "region_id": "4", "cord": {"lat": 2.428820, "lng": 103.845490}}
+    {
+        "id": 1,
+        "name": "Alor Setar",
+        "region_id": "1",
+        "cord": {
+            "lat": 6.177690,
+            "lng": 100.367920
+        },
+        "lightning_ground_flash_density": 17,
+        "soil_resistivity": 55,
+        "zones": [{
+                "structure_id": 1,
+                "r1_before": 3.47E-05,
+                "r1_after": 1.64E-06,
+                "lightning_protection": 4,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            },
+            {
+                "structure_id": 2,
+                "r1_before": 3.44E-04,
+                "r1_after": 7.86E-06,
+                "lightning_protection": 5,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 3,
+                "r1_before": 8.59E-05,
+                "r1_after": 7.36E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 4,
+                "r1_before": 2.06E-04,
+                "r1_after": 8.58E-06,
+                "lightning_protection": 4,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            },
+            {
+                "structure_id": 5,
+                "r1_before": 4.12E-05,
+                "r1_after": 3.45E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Langkawi",
+        "region_id": "1",
+        "cord": {
+            "lat": 6.334720,
+            "lng": 99.797493
+        },
+        "lightning_ground_flash_density": 10,
+        "soil_resistivity": 60,
+        "zones": [{
+                "structure_id": 1,
+                "r1_before": 2.06E-05,
+                "r1_after": 1.77E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            },
+            {
+                "structure_id": 2,
+                "r1_before": 2.04E-04,
+                "r1_after": 9.49E-06,
+                "lightning_protection": 4,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 3,
+                "r1_before": 5.10E-05,
+                "r1_after": 8.35E-06,
+                "lightning_protection": 2,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 4,
+                "r1_before": 1.22E-04,
+                "r1_after": 5.05E-06,
+                "lightning_protection": 4,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            },
+            {
+                "structure_id": 5,
+                "r1_before": 2.44E-05,
+                "r1_after": 4.03E-06,
+                "lightning_protection": 2,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Butterworth",
+        "region_id": "1",
+        "cord": {
+            "lat": 5.414850,
+            "lng": 100.381140
+        },
+        "lightning_ground_flash_density": 17,
+        "soil_resistivity": 80,
+        "zones": [
+            {
+                "structure_id": 1,
+                "r1_before": 3.62E-05,
+                "r1_after": 1.64E-06,
+                "lightning_protection": 4,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            },
+            {
+                "structure_id": 2,
+                "r1_before": 3.59E-04,
+                "r1_after": 8.30E-06,
+                "lightning_protection": 5,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 3,
+                "r1_before": 8.96E-05,
+                "r1_after": 7.47E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 4,
+                "r1_before": 2.13E-04,
+                "r1_after": 8.59E-06,
+                "lightning_protection": 4,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            },
+            {
+                "structure_id": 5,
+                "r1_before": 4.27E-05,
+                "r1_after": 3.45E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Bayan Lepas",
+        "region_id": "1",
+        "cord": {
+            "lat": 5.291880,
+            "lng": 100.264450
+        },
+        "lightning_ground_flash_density": 20,
+        "soil_resistivity": 200,
+        "zones": [
+            {
+                "structure_id": 1,
+                "r1_before": 4.85E-05,
+                "r1_after": 1.94E-06,
+                "lightning_protection": 4,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            },
+            {
+                "structure_id": 2,
+                "r1_before": 4.81E-04,
+                "r1_after": 9.93E-06,
+                "lightning_protection": 5,
+                "surge_protection": {
+                    "power": 3,
+                    "telecom": 3
+                }
+            },
+            {
+                "structure_id": 3,
+                "r1_before": 1.20E-04,
+                "r1_after": 8.83E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 3,
+                    "telecom": 3
+                }
+            },
+            {
+                "structure_id": 4,
+                "r1_before": 2.80E-04,
+                "r1_after": 4.13E-06,
+                "lightning_protection": 5,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            },
+            {
+                "structure_id": 5,
+                "r1_before": 5.61E-05,
+                "r1_after": 4.06E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Ipoh",
+        "region_id": "1",
+        "cord": {
+            "lat": 4.598820,
+            "lng": 101.077110
+        },
+        "lightning_ground_flash_density": 17,
+        "soil_resistivity": 500,
+        "zones": [
+            {
+                "structure_id": 1,
+                "r1_before": 4.92E-05,
+                "r1_after": 1.66E-06,
+                "lightning_protection": 4,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            },
+            {
+                "structure_id": 2,
+                "r1_before": 4.87E-04,
+                "r1_after": 7.87E-06,
+                "lightning_protection": 5,
+                "surge_protection": {
+                    "power": 4,
+                    "telecom": 4
+                }
+            },
+            {
+                "structure_id": 3,
+                "r1_before": 1.22E-04,
+                "r1_after": 7.90E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 3,
+                    "telecom": 3
+                }
+            },
+            {
+                "structure_id": 4,
+                "r1_before": 2.77E-04,
+                "r1_after": 8.65E-06,
+                "lightning_protection": 4,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            },
+            {
+                "structure_id": 5,
+                "r1_before": 5.55E-05,
+                "r1_after": 3.46E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Sitiawan",
+        "region_id": "1",
+        "cord": {
+            "lat": 4.215460,
+            "lng": 100.695587
+        },
+        "lightning_ground_flash_density": 19,
+        "soil_resistivity": 60,
+        "zones": [
+            {
+                "structure_id": 1,
+                "r1_before": 3.91E-05,
+                "r1_after": 1.84E-06,
+                "lightning_protection": 4,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            },
+            {
+                "structure_id": 2,
+                "r1_before": 3.88E-04,
+                "r1_after": 8.89E-06,
+                "lightning_protection": 5,
+                "surge_protection": {
+                    "power": 4,
+                    "telecom": 4
+                }
+            },
+            {
+                "structure_id": 3,
+                "r1_before": 9.69E-05,
+                "r1_after": 8.04E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 3,
+                    "telecom": 3
+                }
+            },
+            {
+                "structure_id": 4,
+                "r1_before": 2.32E-04,
+                "r1_after": 3.88E-06,
+                "lightning_protection": 5,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            },
+            {
+                "structure_id": 5,
+                "r1_before": 4.64E-05,
+                "r1_after": 3.85E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Kota Bharu",
+        "region_id": "2",
+        "cord": {
+            "lat": 6.117520,
+            "lng": 102.241930
+        },
+        "lightning_ground_flash_density": 12,
+        "soil_resistivity": 60,
+        "zones": [
+            {
+                "structure_id": 1,
+                "r1_before": 2.47E-05,
+                "r1_after": 4.20E-06,
+                "lightning_protection": 2,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 2,
+                "r1_before": 2.45E-04,
+                "r1_after": 5.61E-06,
+                "lightning_protection": 5,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 3,
+                "r1_before": 6.21E-05,
+                "r1_after": 9.91E-06,
+                "lightning_protection": 2,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 3
+                }
+            },
+            {
+                "structure_id": 4,
+                "r1_before": 1.46E-04,
+                "r1_after": 6.82E-06,
+                "lightning_protection": 4,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 5,
+                "r1_before": 2.93E-05,
+                "r1_after": 2.43E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Kuala Krai",
+        "region_id": "2",
+        "cord": {
+            "lat": 5.531380,
+            "lng": 102.197968
+        },
+        "lightning_ground_flash_density": 16,
+        "soil_resistivity": 200,
+        "zones": [
+            {
+                "structure_id": 1,
+                "r1_before": 3.88E-05,
+                "r1_after": 5.77E-06,
+                "lightning_protection": 2,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 2,
+                "r1_before": 3.84E-04,
+                "r1_after": 9.22E-06,
+                "lightning_protection": 5,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 3,
+                "r1_before": 9.60E-05,
+                "r1_after": 7.38E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 4,
+                "r1_before": 2.24E-04,
+                "r1_after": 9.96E-06,
+                "lightning_protection": 4,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 5,
+                "r1_before": 4.49E-05,
+                "r1_after": 3.25E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Kuala Terengganu",
+        "region_id": "2",
+        "cord": {
+            "lat": 5.319650,
+            "lng": 103.132103
+        },
+        "lightning_ground_flash_density": 16,
+        "soil_resistivity": 500,
+        "zones": [
+            {
+                "structure_id": 1,
+                "r1_before": 4.63E-05,
+                "r1_after": 6.00E-06,
+                "lightning_protection": 2,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 2,
+                "r1_before": 4.59E-04,
+                "r1_after": 9.42E-06,
+                "lightning_protection": 5,
+                "surge_protection": {
+                    "power": 3,
+                    "telecom": 3
+                }
+            },
+            {
+                "structure_id": 3,
+                "r1_before": 1.15E-04,
+                "r1_after": 7.94E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 4,
+                "r1_before": 2.61E-04,
+                "r1_after": 6.26E-06,
+                "lightning_protection": 5,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 5,
+                "r1_before": 5.28E-05,
+                "r1_after": 3.26E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Kuantan",
+        "region_id": "2",
+        "cord": {
+            "lat": 3.763386,
+            "lng": 103.220184
+        },
+        "lightning_ground_flash_density": 15,
+        "soil_resistivity": 55,
+        "zones": [
+            {
+                "structure_id": 1,
+                "r1_before": 3.06E-05,
+                "r1_after": 5.24E-06,
+                "lightning_protection": 2,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 2,
+                "r1_before": 3.03E-04,
+                "r1_after": 6.93E-06,
+                "lightning_protection": 5,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 3,
+                "r1_before": 7.58E-05,
+                "r1_after": 6.49E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 4,
+                "r1_before": 1.82E-04,
+                "r1_after": 8.48E-06,
+                "lightning_protection": 4,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 5,
+                "r1_before": 3.64E-05,
+                "r1_after": 3.04E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Temerloh",
+        "region_id": "2",
+        "cord": {
+            "lat": 3.448649,
+            "lng": 102.416351
+        },
+        "lightning_ground_flash_density": 11,
+        "soil_resistivity": 60,
+        "zones": [
+            {
+                "structure_id": 1,
+                "r1_before": 2.27E-05,
+                "r1_after": 3.85E-06,
+                "lightning_protection": 2,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 2,
+                "r1_before": 2.25E-04,
+                "r1_after": 5.15E-06,
+                "lightning_protection": 5,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 3,
+                "r1_before": 5.61E-05,
+                "r1_after": 9.18E-06,
+                "lightning_protection": 2,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 4,
+                "r1_before": 1.34E-04,
+                "r1_after": 6.25E-06,
+                "lightning_protection": 4,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 5,
+                "r1_before": 2.69E-05,
+                "r1_after": 4.43E-06,
+                "lightning_protection": 2,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Subang",
+        "region_id": "3",
+        "cord": {
+            "lat": 3.012860,
+            "lng": 101.570180
+        },
+        "lightning_ground_flash_density": 19,
+        "soil_resistivity": 60,
+        "zones": [
+            {
+                "structure_id": 1,
+                "r1_before": 3.91E-05,
+                "r1_after": 8.00E-06,
+                "lightning_protection": 2,
+                "surge_protection": {
+                    "power": 1,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 2,
+                "r1_before": 3.88E-04,
+                "r1_after": 8.89E-06,
+                "lightning_protection": 5,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 3,
+                "r1_before": 9.69E-05,
+                "r1_after": 8.25E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 4,
+                "r1_before": 2.32E-04,
+                "r1_after": 5.09E-06,
+                "lightning_protection": 5,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 5,
+                "r1_before": 4.64E-05,
+                "r1_after": 3.85E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "name": "KLIA Sepang",
+        "region_id": "3",
+        "cord": {
+            "lat": 2.818450,
+            "lng": 101.684330
+        },
+        "lightning_ground_flash_density": 18,
+        "soil_resistivity": 60,
+        "zones": [
+            {
+                "structure_id": 1,
+                "r1_before": 3.71E-05,
+                "r1_after": 7.58E-06,
+                "lightning_protection": 4,
+                "surge_protection": {
+                    "power": 1,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 2,
+                "r1_before": 3.67E-04,
+                "r1_after": 8.42E-06,
+                "lightning_protection": 5,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 3,
+                "r1_before": 9.18E-05,
+                "r1_after": 7.82E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 4,
+                "r1_before": 2.20E-04,
+                "r1_after": 4.82E-06,
+                "lightning_protection": 5,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 5,
+                "r1_before": 4.40E-05,
+                "r1_after": 3.65E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Malacca",
+        "region_id": "4",
+        "cord": {
+            "lat": 2.201960,
+            "lng": 102.248530
+        },
+        "lightning_ground_flash_density": 14,
+        "soil_resistivity": 60,
+        "zones": [
+            {
+                "structure_id": 1,
+                "r1_before": 2.88E-05,
+                "r1_after": 9.89E-06,
+                "lightning_protection": 2,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 1
+                }
+            },
+            {
+                "structure_id": 2,
+                "r1_before": 2.86E-04,
+                "r1_after": 6.55E-06,
+                "lightning_protection": 5,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 3,
+                "r1_before": 7.14E-05,
+                "r1_after": 6.08E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 4,
+                "r1_before": 1.71E-04,
+                "r1_after": 7.96E-06,
+                "lightning_protection": 4,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 5,
+                "r1_before": 3.42E-05,
+                "r1_after": 2.84E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Kluang",
+        "region_id": "4",
+        "cord": {
+            "lat": 2.051540,
+            "lng": 103.371960
+        },
+        "lightning_ground_flash_density": 19,
+        "soil_resistivity": 60,
+        "zones": [
+            {
+                "structure_id": 1,
+                "r1_before": 3.91E-05,
+                "r1_after": 8.00E-06,
+                "lightning_protection": 2,
+                "surge_protection": {
+                    "power": 1,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 2,
+                "r1_before": 3.88E-04,
+                "r1_after": 8.89E-06,
+                "lightning_protection": 5,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 3,
+                "r1_before": 9.69E-05,
+                "r1_after": 8.25E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 4,
+                "r1_before": 2.32E-04,
+                "r1_after": 5.09E-06,
+                "lightning_protection": 5,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 5,
+                "r1_before": 4.64E-05,
+                "r1_after": 3.85E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Senai",
+        "region_id": "4",
+        "cord": {
+            "lat": 1.623780,
+            "lng": 103.630160
+        },
+        "lightning_ground_flash_density": 17,
+        "soil_resistivity": 60,
+        "zones": [
+            {
+                "structure_id": 1,
+                "r1_before": 3.50E-05,
+                "r1_after": 7.16E-06,
+                "lightning_protection": 2,
+                "surge_protection": {
+                    "power": 1,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 2,
+                "r1_before": 3.47E-04,
+                "r1_after": 7.95E-06,
+                "lightning_protection": 5,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 3,
+                "r1_before": 8.67E-05,
+                "r1_after": 7.38E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 4,
+                "r1_before": 2.07E-04,
+                "r1_after": 4.55E-06,
+                "lightning_protection": 5,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 5,
+                "r1_before": 4.15E-05,
+                "r1_after": 3.45E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Mersing",
+        "region_id": "4",
+        "cord": {
+            "lat": 2.428820,
+            "lng": 103.845490
+        },
+        "lightning_ground_flash_density": 17,
+        "soil_resistivity": 500,
+        "zones": [
+            {
+                "structure_id": 1,
+                "r1_before": 4.92E-05,
+                "r1_after": 9.87E-06,
+                "lightning_protection": 2,
+                "surge_protection": {
+                    "power": 1,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 2,
+                "r1_before": 4.87E-04,
+                "r1_after": 9.66E-06,
+                "lightning_protection": 5,
+                "surge_protection": {
+                    "power": 4,
+                    "telecom": 3
+                }
+            },
+            {
+                "structure_id": 3,
+                "r1_before": 1.22E-04,
+                "r1_after": 8.43E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 4,
+                "r1_before": 2.77E-04,
+                "r1_after": 6.66E-06,
+                "lightning_protection": 5,
+                "surge_protection": {
+                    "power": 2,
+                    "telecom": 2
+                }
+            },
+            {
+                "structure_id": 5,
+                "r1_before": 5.55E-05,
+                "r1_after": 3.46E-06,
+                "lightning_protection": 3,
+                "surge_protection": {
+                    "power": 5,
+                    "telecom": 5
+                }
+            }
+        ]
+    }
 ]

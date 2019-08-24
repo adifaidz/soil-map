@@ -1,7 +1,7 @@
 [
-    {"name": "Hospital", "zone": "Entrance"},
-    {"name": "Residential (Condominium)", "zone": "Entrance"},
-    {"name": "School", "zone": "Classroom"},
-    {"name": "Industrial (Factory)", "zone": "Working Area"},
-    {"name": "Hotel", "zone": "Entrance"}
+    {"id": 1,"name": "Hospital", "zone": "Entrance"},
+    {"id": 2,"name": "Residential (Condominium)", "zone": "Entrance"},
+    {"id": 3,"name": "School", "zone": "Classroom"},
+    {"id": 4,"name": "Industrial (Factory)", "zone": "Working Area"},
+    {"id": 5, "name": "Office", "zone": "Working Area"}
 ]

@@ -14,3 +14,26 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+.code-red {
+    color: red;
+    font-weight: bold;
+}
+
+.code-green {
+    color: green;
+    font-weight: bold;
+}
+
+.location-info .title {
+    text-align: center;
+}
+
+.location-info .body .info-list {
+    list-style-type: none;
+    padding: 5px;
+}
+
+.location-info .body li {
+    margin: 2px 0
+}
