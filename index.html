@@ -5,26 +5,42 @@
         <meta name="viewport" content="initial-scale=1.0">
         <meta charset="utf-8">
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
     </head>
 <body>
 <div id="query-form">
-    <div class="form-group">
-        <label for="region">Region</label>
-        <select name="region" id="region"></select>
+    <div class="field">
+        <label for="region" class="label">Region</label>
+        <div class="control">
+            <div class="select is-fullwidth">
+                <select name="region" id="region"></select>
+            </div>
+        </div>
     </div>
-    <div class="form-group">
-        <label for="location">Location</label>
-        <select name="location" id="location"></select>
+    <div class="field">
+        <label for="location" class="label">Location</label>
+        <div class="control">
+            <div class="select is-fullwidth">
+                <select name="location" id="location"></select>
+            </div>
+        </div>
     </div>
-    <div class="form-group">
-        <label for="structure">Type of Structure</label>
-        <select name="structure" id="structure"></select>
+    <div class="field">
+        <label for="structure" class="label">Type of Structure</label>
+        <div class="control">
+            <div class="select is-fullwidth">
+                <select name="structure" id="structure"></select>
+            </div>
+        </div>
     </div>
-    <button id="search-button">Go</button>
+    <div class="field">
+        <button id="search-button" class="button is-orange is-fullwidth">Go</button>
+    </div>
 </div>
 <div id="map"></div>
+<div id="legend"><h3>Soil Resistivity</h3></div>
 <script
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQjf0s6tUxLLRHyJNf5C1mismvAa8YKbI&callback=initMap"
+src="https://maps.googleapis.com/maps/api/js?v=3.37&key=AIzaSyCQjf0s6tUxLLRHyJNf5C1mismvAa8YKbI&callback=initMap"
 async defer></script>
 <script src="index.js"></script>
 </body>

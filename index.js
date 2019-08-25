@@ -5,8 +5,20 @@ var mapOptions = {
         lat: 3.9398315,
         lng: 102.3507851
     },
-    zoom: 7
+    zoom: 7,
+    mapTypeId: 'roadmap'
 };
+
+var legends = [
+    { label: '1-100', icon: 'https://maps.google.com/mapfiles/ms/icons/red-dot.png'},
+    { label: '101-200', icon: 'https://maps.google.com/mapfiles/ms/icons/pink-dot.png' },
+    { label: '201-250', icon: 'https://maps.google.com/mapfiles/ms/icons/orange-dot.png' },
+    { label: '251-300', icon: 'https://maps.google.com/mapfiles/ms/icons/yellow-dot.png' },
+    { label: '301-350', icon: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png' },
+    { label: '351-400', icon: 'https://maps.google.com/mapfiles/ms/icons/ltblue-dot.png' },
+    { label: '401-450', icon: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png' },
+    { label: '451-500', icon: 'https://maps.google.com/mapfiles/ms/icons/purple-dot.png' }
+]
 
 document.addEventListener('DOMContentLoaded', function () {
     get('region').then(function (regionList) {
@@ -75,16 +87,15 @@ document.addEventListener('DOMContentLoaded', function () {
             sps2 = surge_protections[structure.surge_protection.telecom - 1].name,
             r1_before_class = structure.r1_before >= 1E-5 ? 'code-red' : 'code-green';
             r1_after_class = structure.r1_after >= 1E-5 ? 'code-red' : 'code-green';
-            
-        
-        console.log(structure.r1_before >= 1E-5)
+
         marker = new google.maps.Marker({
             position: location.cord,
             title: "Test",
-            icon: { url : 'https://maps.google.com/mapfiles/ms/icons/green-dot.png'}
+            icon: { url : getMarkerColor(location.soil_resistivity)}
         })
+
         var contentString = `<div id="content" class="location-info">
-            <h3 class="title">${location.name}</h3>
+            <h1 class="head is-size-5 has-text-centered has-text-weight-bold">${location.name}</h1>
             <div class="body">
                 <ul class="info-list">
                     <li> Lightning Ground Flash Density : ${location.lightning_ground_flash_density}</li>
@@ -127,19 +138,65 @@ function get(name) {
     })
 }
 
+function getMarkerColor(resistivity) {
+    var color;
+
+    if(resistivity >= 1 && resistivity <= 50)
+        color = 'red'
+    else if (resistivity >= 51 && resistivity <= 100)
+        color = 'red'
+    else if (resistivity >= 101 && resistivity <= 150)
+        color = 'pink'
+    else if (resistivity >= 151 && resistivity <= 200)
+        color = 'pink'
+    else if (resistivity >= 201 && resistivity <= 250)
+        color = 'orange'
+    else if (resistivity >= 251 && resistivity <= 300)
+        color = 'yellow'
+    else if (resistivity >= 301 && resistivity <= 350)
+        color = 'green'
+    else if (resistivity >= 351 && resistivity <= 400)
+        color = 'ltblue'
+    else if (resistivity >= 401 && resistivity <= 450)
+        color = 'blue'
+    else
+        color = 'purple'
+
+    return `https://maps.google.com/mapfiles/ms/icons/${color}-dot.png`;
+}
+
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
     layer = new google.maps.FusionTablesLayer({
         map: map,
+        suppressInfoWindows: true,
+        clickable: false,
         query: {
             select: "'name_0', 'name_1', 'kml_4326'",
             from: "420419",
-            where: "'name_0' = 'Malaysia'"
+            where: "'name_0' = 'Malaysia' and 'name_1' not equal to 'Sabah' and 'name_1' not equal to 'Sarawak'"
         },
         options: {
             styleId: 9,
             templateId: 8
-        }
+        },
+        // styles: [
+        //     {
+        //         polygonOptions: {
+        //             fillColor: '',
+        //             fillOpacity: 0.4,
+        //         }
+        //     }
+        // ]
     });
+
+    var legendControl = document.getElementById('legend')
+    legends.forEach(function(legend){
+        var div = document.createElement('div')
+        div.innerHTML = `<img src='${legend.icon}'>${legend.label}`
+        legendControl.appendChild(div)
+    })
+
+    map.controls[google.maps.ControlPosition.RIGHT_TOP].push(legend)
 }

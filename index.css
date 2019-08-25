@@ -1,11 +1,28 @@
 /* Always set the map height explicitly to define the size of the div
 * element that contains the map. */
-#query-form{
-    padding: 50px;
+#query-form {
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    background: #1b1680;
+    box-shadow: 5px 0px 8px 3px rgba(0, 0, 0, 0.3);
 }
 
+#query-form .label{
+    color: white;
+}
+
+#query-form .button.is-orange{
+    background-color: #ee7202;
+    border-color: transparent;
+    color: #fff;
+}
 #map {
-    height: 70%;
+    height: 100%;
+    width: 100%;
 }
 
 /* Optional: Makes the sample page fill the window. */
@@ -13,6 +30,27 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+}
+
+#legend {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    background: #1b1680;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+    border: 0 none;
+    border-radius: 2px;
+}
+
+#legend h3 {
+    margin-top: 0;
+}
+
+#legend img {
+    vertical-align: middle;
+    margin: 5px 0 5px 0
 }
 
 .code-red {
@@ -25,7 +63,7 @@ html, body {
     font-weight: bold;
 }
 
-.location-info .title {
+.location-info .head {
     text-align: center;
 }
 
@@ -34,6 +72,19 @@ html, body {
     padding: 5px;
 }
 
+.location-info .body .info-list ul{
+    list-style: circle;
+    padding-inline-start: 40px;
+}
+
 .location-info .body li {
     margin: 2px 0
+}
+
+.gm-control-active {
+    background: #1b1680 !important;
+}
+
+.gm-control-active img {
+    filter: contrast(1000%) invert(100%);
 }
