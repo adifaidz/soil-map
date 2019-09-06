@@ -10,11 +10,11 @@ var mapOptions = {
 };
 
 var legends = [
-    { label: '1-100', min: 1, max: 100, icon: 'red'},
-    { label: '101-200', min: 101, max: 200, icon: 'pink' },
-    { label: '201-250', min: 201, max: 250, icon: 'orange' },
-    { label: '251-300', min: 251,max: 300, icon: 'yellow' },
-    { label: '301-350', min: 301, max: 350, icon: 'green' },
+    { label: '1-100', min: 1, max: 100, icon: 'pink'},
+    { label: '101-200', min: 101, max: 200, icon: 'orange' },
+    { label: '201-250', min: 201, max: 250, icon: 'yellow' },
+    { label: '251-300', min: 251,max: 300, icon: 'green' },
+    { label: '301-350', min: 301, max: 350, icon: 'dkgreen' },
     { label: '351-400', min: 351, max: 400, icon: 'ltblue' },
     { label: '401-450', min: 401, max: 460, icon: 'blue' },
     { label: '451-500', min: 451, max: 500, icon: 'purple' }
@@ -99,7 +99,7 @@ function createLegend(){
     legends.forEach(function (legend) {
         var div = document.createElement('div')
         div.innerHTML = `<div id='${legend.icon}-legend' class="legend-item is-size-7">
-            <img src='https://maps.google.com/mapfiles/ms/icons/${legend.icon}-dot.png'>
+            <img src='icons/${legend.icon}-dot.png'>
             <label>${legend.label}</label>
         </div>`
         legendControl.appendChild(div)
@@ -137,7 +137,7 @@ function getMarker(){
             <h1 class="head is-size-5 has-text-centered has-text-weight-bold">${location.name}</h1>
             <div class="body">
                 <ul class="info-list">
-                    <li> Lightning Ground Flash Density : ${location.lightning_ground_flash_density}</li>
+                    <li> Lightning Ground Flash Density ( flashes/km²/year ): ${location.lightning_ground_flash_density}</li>
                     <li> Soil Resistivity ( Ω meter ) : ${location.soil_resistivity}</li>
                     <li> R1 (Loss of Human Life) : 
                         <span class="${r1_before_class}">
@@ -179,7 +179,7 @@ function getAllMarkers(id){
             <h1 class="head is-size-5 has-text-centered has-text-weight-bold">${location.name}</h1>
             <div class="body">
                 <ul class="info-list">
-                    <li> Lightning Ground Flash Density : ${location.lightning_ground_flash_density}</li>
+                    <li> Lightning Ground Flash Density ( flashes/km²/year ) : ${location.lightning_ground_flash_density}</li>
                     <li> Soil Resistivity ( Ω meter ) : ${location.soil_resistivity}</li>
                 </ul>
             </div>
@@ -265,19 +265,19 @@ function getMarkerColor(resistivity) {
     var color;
 
     if (resistivity >= 1 && resistivity <= 50)
-        color = 'red'
+        color = 'pink'
     else if (resistivity >= 51 && resistivity <= 100)
-        color = 'red'
+        color = 'pink'
     else if (resistivity >= 101 && resistivity <= 150)
-        color = 'pink'
-    else if (resistivity >= 151 && resistivity <= 200)
-        color = 'pink'
-    else if (resistivity >= 201 && resistivity <= 250)
         color = 'orange'
-    else if (resistivity >= 251 && resistivity <= 300)
+    else if (resistivity >= 151 && resistivity <= 200)
+        color = 'orange'
+    else if (resistivity >= 201 && resistivity <= 250)
         color = 'yellow'
-    else if (resistivity >= 301 && resistivity <= 350)
+    else if (resistivity >= 251 && resistivity <= 300)
         color = 'green'
+    else if (resistivity >= 301 && resistivity <= 350)
+        color = 'dkgreen'
     else if (resistivity >= 351 && resistivity <= 400)
         color = 'ltblue'
     else if (resistivity >= 401 && resistivity <= 450)
@@ -285,5 +285,5 @@ function getMarkerColor(resistivity) {
     else
         color = 'purple'
 
-    return `https://maps.google.com/mapfiles/ms/icons/${color}-dot.png`;
+    return `icons/${color}-dot.png`;
 }
