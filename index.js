@@ -145,7 +145,7 @@ function getMarker(){
                         </span>
                     </li>
                     <li> Lightning Protection System (LPS) : ${lps} <br> </li>
-                    <li> Surge Protection System (SPD) : 
+                    <li> Surge Protection Device (SPD) : 
                     <ul>                
                         <li> Power : ${sps1}</li>
                         <li> Telecom : ${sps2}</li>
