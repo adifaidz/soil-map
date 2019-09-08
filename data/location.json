@@ -1,5 +1,4 @@
-[
-    {
+[{
         "id": 1,
         "name": "Alor Setar",
         "region_id": "1",
@@ -9,7 +8,7 @@
         },
         "lightning_ground_flash_density": 17,
         "soil_resistivity": 55,
-        "zones": [{
+        "structures": [{
                 "structure_id": 1,
                 "r1_before": 3.47E-05,
                 "r1_after": 1.64E-06,
@@ -71,7 +70,7 @@
         },
         "lightning_ground_flash_density": 10,
         "soil_resistivity": 60,
-        "zones": [{
+        "structures": [{
                 "structure_id": 1,
                 "r1_before": 2.06E-05,
                 "r1_after": 1.77E-06,
@@ -133,8 +132,7 @@
         },
         "lightning_ground_flash_density": 17,
         "soil_resistivity": 80,
-        "zones": [
-            {
+        "structures": [{
                 "structure_id": 1,
                 "r1_before": 3.62E-05,
                 "r1_after": 1.64E-06,
@@ -196,8 +194,7 @@
         },
         "lightning_ground_flash_density": 20,
         "soil_resistivity": 200,
-        "zones": [
-            {
+        "structures": [{
                 "structure_id": 1,
                 "r1_before": 4.85E-05,
                 "r1_after": 1.94E-06,
@@ -259,8 +256,7 @@
         },
         "lightning_ground_flash_density": 17,
         "soil_resistivity": 500,
-        "zones": [
-            {
+        "structures": [{
                 "structure_id": 1,
                 "r1_before": 4.92E-05,
                 "r1_after": 1.66E-06,
@@ -322,8 +318,7 @@
         },
         "lightning_ground_flash_density": 19,
         "soil_resistivity": 60,
-        "zones": [
-            {
+        "structures": [{
                 "structure_id": 1,
                 "r1_before": 3.91E-05,
                 "r1_after": 1.84E-06,
@@ -385,8 +380,7 @@
         },
         "lightning_ground_flash_density": 12,
         "soil_resistivity": 60,
-        "zones": [
-            {
+        "structures": [{
                 "structure_id": 1,
                 "r1_before": 2.47E-05,
                 "r1_after": 4.20E-06,
@@ -448,8 +442,7 @@
         },
         "lightning_ground_flash_density": 16,
         "soil_resistivity": 200,
-        "zones": [
-            {
+        "structures": [{
                 "structure_id": 1,
                 "r1_before": 3.88E-05,
                 "r1_after": 5.77E-06,
@@ -511,8 +504,7 @@
         },
         "lightning_ground_flash_density": 16,
         "soil_resistivity": 500,
-        "zones": [
-            {
+        "structures": [{
                 "structure_id": 1,
                 "r1_before": 4.63E-05,
                 "r1_after": 6.00E-06,
@@ -574,8 +566,7 @@
         },
         "lightning_ground_flash_density": 15,
         "soil_resistivity": 55,
-        "zones": [
-            {
+        "structures": [{
                 "structure_id": 1,
                 "r1_before": 3.06E-05,
                 "r1_after": 5.24E-06,
@@ -637,8 +628,7 @@
         },
         "lightning_ground_flash_density": 11,
         "soil_resistivity": 60,
-        "zones": [
-            {
+        "structures": [{
                 "structure_id": 1,
                 "r1_before": 2.27E-05,
                 "r1_after": 3.85E-06,
@@ -700,8 +690,7 @@
         },
         "lightning_ground_flash_density": 19,
         "soil_resistivity": 60,
-        "zones": [
-            {
+        "structures": [{
                 "structure_id": 1,
                 "r1_before": 3.91E-05,
                 "r1_after": 8.00E-06,
@@ -763,8 +752,7 @@
         },
         "lightning_ground_flash_density": 18,
         "soil_resistivity": 60,
-        "zones": [
-            {
+        "structures": [{
                 "structure_id": 1,
                 "r1_before": 3.71E-05,
                 "r1_after": 7.58E-06,
@@ -826,8 +814,7 @@
         },
         "lightning_ground_flash_density": 14,
         "soil_resistivity": 60,
-        "zones": [
-            {
+        "structures": [{
                 "structure_id": 1,
                 "r1_before": 2.88E-05,
                 "r1_after": 9.89E-06,
@@ -889,8 +876,7 @@
         },
         "lightning_ground_flash_density": 19,
         "soil_resistivity": 60,
-        "zones": [
-            {
+        "structures": [{
                 "structure_id": 1,
                 "r1_before": 3.91E-05,
                 "r1_after": 8.00E-06,
@@ -952,8 +938,7 @@
         },
         "lightning_ground_flash_density": 17,
         "soil_resistivity": 60,
-        "zones": [
-            {
+        "structures": [{
                 "structure_id": 1,
                 "r1_before": 3.50E-05,
                 "r1_after": 7.16E-06,
@@ -1015,8 +1000,7 @@
         },
         "lightning_ground_flash_density": 17,
         "soil_resistivity": 500,
-        "zones": [
-            {
+        "structures": [{
                 "structure_id": 1,
                 "r1_before": 4.92E-05,
                 "r1_after": 9.87E-06,
