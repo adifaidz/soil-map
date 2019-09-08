@@ -123,7 +123,7 @@ function getMarker(){
     var location = locations.find(function (location) {
         return location.id == loc_id
     }),
-        structure = location.zones.find(function (zone) {
+        structure = location.structures.find(function (zone) {
         return zone.structure_id == struct_id
     })
 
